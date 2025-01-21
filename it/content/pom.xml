@@ -79,13 +79,6 @@
                             <isDisabled>true</isDisabled>
                         </jackrabbit-nodetypes>
                     </validatorsSettings>
-                    <dependencies>
-                        <dependency>
-                            <groupId>${project.groupId}</groupId>
-                            <artifactId>core-cif-components-examples-content</artifactId>
-                            <version>${project.version}</version>
-                        </dependency>
-                    </dependencies>
                 </configuration>
             </plugin>
             <plugin>
@@ -160,12 +153,5 @@
     <!-- D E P E N D E N C I E S                                                -->
     <!-- ====================================================================== -->
     <dependencies>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>core-cif-components-examples-content</artifactId>
-            <version>${project.version}</version>
-            <type>zip</type>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
 </project>
