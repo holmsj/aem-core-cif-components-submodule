@@ -123,6 +123,7 @@
                 <configuration>
                     <excludes>
                         <exclude>frontend-maven-plugin/**/*</exclude>
+                        <exclude>.well-known/**/*</exclude>
                     </excludes>
                 </configuration>
             </plugin>
