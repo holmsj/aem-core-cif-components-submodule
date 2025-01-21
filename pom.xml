@@ -46,7 +46,6 @@
         <module>ui.apps</module>
         <module>ui.config</module>
         <module>bundles/core</module>
-        <module>examples</module>
         <module>extensions/product-recs</module>
         <module>extensions/experience-platform-connector</module>
         <module>all</module>
