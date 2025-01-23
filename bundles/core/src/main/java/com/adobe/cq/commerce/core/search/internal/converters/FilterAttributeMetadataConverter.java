@@ -15,6 +15,8 @@
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 package com.adobe.cq.commerce.core.search.internal.converters;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.function.Function;
 
@@ -36,7 +38,7 @@ public class FilterAttributeMetadataConverter implements Function<__InputValue, 
      * @param allAttributeMetadata metadata for all attributes
      */
     public FilterAttributeMetadataConverter(final List<Attribute> allAttributeMetadata) {
-        this.allAttributeMetadata = allAttributeMetadata;
+        this.allAttributeMetadata = Collections.unmodifiableList(new ArrayList<>(allAttributeMetadata));
     }
 
     @Override

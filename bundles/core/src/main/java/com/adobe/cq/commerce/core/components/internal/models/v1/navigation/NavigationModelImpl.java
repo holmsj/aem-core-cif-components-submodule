@@ -16,6 +16,7 @@
 package com.adobe.cq.commerce.core.components.internal.models.v1.navigation;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -77,7 +78,7 @@ public class NavigationModelImpl implements NavigationModel {
             populateNavigationList(rootNavigation.getId(), rootNavigation.getParentId(), rootNavigation.getItems(), navigationList);
         }
 
-        return navigationList;
+        return Collections.unmodifiableList(navigationList);
     }
 
     private void populateNavigationList(String id, String parentId, List<NavigationItem> items, List<Navigation> navigationList) {

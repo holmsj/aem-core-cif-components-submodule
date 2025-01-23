@@ -115,6 +115,6 @@ public class PageImpl extends AbstractPageDelegator implements Page {
                 htmlPageItems = existingItems;
             }
         }
-        return htmlPageItems;
+        return Collections.unmodifiableList(htmlPageItems);
     }
 }

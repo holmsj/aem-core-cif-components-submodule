@@ -15,6 +15,7 @@
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 package com.adobe.cq.commerce.core.components.internal.models.v1.common;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.function.Function;
@@ -76,7 +77,7 @@ public class ProductListItemImpl extends DataLayerListItem implements ProductLis
         this.sku = sku;
         this.urlKey = urlKey;
         this.urlPath = urlPath;
-        this.urlRewrites = urlRewrites;
+        this.urlRewrites = urlRewrites != null ? new ArrayList<>(urlRewrites) : null;
         this.name = name;
         this.imageURL = imageURL;
         this.imageAlt = StringUtils.defaultIfBlank(imageAlt, name);
@@ -288,7 +289,7 @@ public class ProductListItemImpl extends DataLayerListItem implements ProductLis
         }
 
         public Builder urlRewrites(List<UrlRewrite> urlRewrites) {
-            this.urlRewrites = urlRewrites;
+            this.urlRewrites = urlRewrites != null ? new ArrayList<>(urlRewrites) : null;
             return this;
         }
 

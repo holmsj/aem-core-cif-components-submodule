@@ -44,7 +44,7 @@ import com.adobe.granite.ui.components.ds.DataSource;
 public class ProductPageUrlFormatsServlet extends AbstractPageUrlFormatsServlet {
     static final String RESOURCE_TYPE = "core/cif/components/datasource/producturlformats";
     static final String PAGE_URL_FORMAT_KEY = "productPageUrlFormat";
-    static final List<String> URL_FORMATS = UrlProviderImpl.DEFAULT_PRODUCT_URL_FORMATS.keySet().stream().map(f -> f.replace(
+    static final List<String> URL_FORMATS = UrlProviderImpl.getDefaultProductUrlFormats().keySet().stream().map(f -> f.replace(
         "#", "\\#")).collect(Collectors.toList());
 
     @Reference(

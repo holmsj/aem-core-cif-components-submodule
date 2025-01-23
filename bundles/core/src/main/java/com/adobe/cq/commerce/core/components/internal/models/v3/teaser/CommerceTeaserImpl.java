@@ -16,6 +16,7 @@
 package com.adobe.cq.commerce.core.components.internal.models.v3.teaser;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -135,7 +136,7 @@ public class CommerceTeaserImpl implements CommerceTeaser {
 
     @Override
     public List<ListItem> getActions() {
-        return actions;
+        return Collections.unmodifiableList(actions);
     }
 
     @Override
