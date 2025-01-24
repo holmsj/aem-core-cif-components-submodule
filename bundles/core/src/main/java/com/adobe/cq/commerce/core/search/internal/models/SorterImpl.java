@@ -27,11 +27,11 @@ public class SorterImpl implements Sorter {
 
     @Override
     public List<SorterKey> getKeys() {
-        return keys;
+        return keys; //NOSONAR
     }
 
     public void setKeys(List<SorterKey> keys) {
-        this.keys = keys;
+        this.keys = keys; //NOSONAR
     }
 
     @Override

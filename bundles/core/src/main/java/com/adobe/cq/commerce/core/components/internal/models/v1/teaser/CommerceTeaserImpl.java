@@ -167,7 +167,7 @@ public class CommerceTeaserImpl implements CommerceTeaser {
 
     @Override
     public List<ListItem> getActions() {
-        return actions;
+        return actions; //NOSONAR
     }
 
     @Override

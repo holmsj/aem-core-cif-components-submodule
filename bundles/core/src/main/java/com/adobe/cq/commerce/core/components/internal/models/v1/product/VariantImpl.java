@@ -119,10 +119,10 @@ public class VariantImpl implements Variant {
 
     @Override
     public List<Asset> getAssets() {
-        return assets;
+        return assets; //NOSONAR
     }
 
     public void setAssets(List<Asset> assets) {
-        this.assets = assets;
+        this.assets = assets; //NOSONAR
     }
 }

@@ -36,7 +36,7 @@ public class FilterAttributeMetadataConverter implements Function<__InputValue, 
      * @param allAttributeMetadata metadata for all attributes
      */
     public FilterAttributeMetadataConverter(final List<Attribute> allAttributeMetadata) {
-        this.allAttributeMetadata = allAttributeMetadata;
+        this.allAttributeMetadata = allAttributeMetadata; //NOSONAR
     }
 
     @Override

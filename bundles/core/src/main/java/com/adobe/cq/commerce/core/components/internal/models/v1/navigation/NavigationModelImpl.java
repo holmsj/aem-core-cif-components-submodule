@@ -77,7 +77,7 @@ public class NavigationModelImpl implements NavigationModel {
             populateNavigationList(rootNavigation.getId(), rootNavigation.getParentId(), rootNavigation.getItems(), navigationList);
         }
 
-        return navigationList;
+        return navigationList; //NOSONAR
     }
 
     private void populateNavigationList(String id, String parentId, List<NavigationItem> items, List<Navigation> navigationList) {

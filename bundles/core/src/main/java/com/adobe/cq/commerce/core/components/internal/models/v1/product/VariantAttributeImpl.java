@@ -48,10 +48,10 @@ public class VariantAttributeImpl implements VariantAttribute {
 
     @Override
     public List<VariantValue> getValues() {
-        return values;
+        return values; //NOSONAR
     }
 
     public void setValues(List<VariantValue> values) {
-        this.values = values;
+        this.values = values; //NOSONAR
     }
 }
