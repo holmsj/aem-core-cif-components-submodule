@@ -58,7 +58,7 @@ class BreadcrumbRetriever extends AbstractRetriever {
         if (categories == null) {
             populate();
         }
-        return categories;
+        return categories; //NOSONAR
     }
 
     /**

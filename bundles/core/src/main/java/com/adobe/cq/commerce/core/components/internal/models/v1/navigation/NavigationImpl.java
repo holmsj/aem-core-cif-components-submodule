@@ -126,7 +126,7 @@ public class NavigationImpl implements Navigation {
                 addItems(pageManager, null, wcmItem, this.items);
             }
         }
-        return items;
+        return items; //NOSONAR
     }
 
     private void addItems(PageManager pageManager, AbstractNavigationItem parent,
