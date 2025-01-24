@@ -15,8 +15,6 @@
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 package com.adobe.cq.commerce.core.components.internal.models.v1.product;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -121,10 +119,10 @@ public class VariantImpl implements Variant {
 
     @Override
     public List<Asset> getAssets() {
-        return Collections.unmodifiableList(assets);
+        return assets;
     }
 
     public void setAssets(List<Asset> assets) {
-        this.assets = assets == null ? null : Collections.unmodifiableList(new ArrayList<>(assets));
+        this.assets = assets;
     }
 }

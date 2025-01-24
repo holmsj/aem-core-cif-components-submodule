@@ -156,6 +156,6 @@ public class ProductImpl extends com.adobe.cq.commerce.core.components.internal.
 
     @Override
     public Set<String> getVisibleSections() {
-        return Collections.unmodifiableSet(visibleSectionsSet);
+        return visibleSectionsSet;
     }
 }

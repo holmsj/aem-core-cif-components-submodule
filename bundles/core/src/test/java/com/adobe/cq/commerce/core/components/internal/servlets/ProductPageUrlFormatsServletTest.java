@@ -51,7 +51,7 @@ public class ProductPageUrlFormatsServletTest {
         datasource = context.registerInjectActivateService(new ProductPageUrlFormatsServlet());
         List<String> expectedValuesList = new ArrayList<>();
         expectedValuesList.add("");
-        UrlProviderImpl.getDefaultProductUrlFormats().keySet().forEach(f -> expectedValuesList.add(f.replace(
+        UrlProviderImpl.DEFAULT_PRODUCT_URL_FORMATS.keySet().forEach(f -> expectedValuesList.add(f.replace(
             "#", "\\#")));
         expectedValuesList.add(
             "com.adobe.cq.commerce.core.components.internal.servlets.ProductPageUrlFormatsServletTest$CustomUrlFormat");

@@ -15,8 +15,6 @@
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 package com.adobe.cq.commerce.core.components.internal.models.v1.product;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import com.adobe.cq.commerce.core.components.models.product.VariantAttribute;
@@ -50,10 +48,10 @@ public class VariantAttributeImpl implements VariantAttribute {
 
     @Override
     public List<VariantValue> getValues() {
-        return Collections.unmodifiableList(values);
+        return values;
     }
 
     public void setValues(List<VariantValue> values) {
-        this.values = values != null ? new ArrayList<>(values) : Collections.emptyList();
+        this.values = values;
     }
 }

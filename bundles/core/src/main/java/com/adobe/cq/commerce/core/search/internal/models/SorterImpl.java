@@ -15,7 +15,6 @@
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 package com.adobe.cq.commerce.core.search.internal.models;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import com.adobe.cq.commerce.core.search.models.Sorter;
@@ -28,11 +27,11 @@ public class SorterImpl implements Sorter {
 
     @Override
     public List<SorterKey> getKeys() {
-        return keys == null ? null : new ArrayList<>(keys);
+        return keys;
     }
 
     public void setKeys(List<SorterKey> keys) {
-        this.keys = keys == null ? null : new ArrayList<>(keys);
+        this.keys = keys;
     }
 
     @Override

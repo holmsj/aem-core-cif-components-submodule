@@ -57,13 +57,13 @@ public class SearchResultsSetImpl implements SearchResultsSet {
     @Nonnull
     @Override
     public List<ProductListItem> getProductListItems() {
-        return Collections.unmodifiableList(productListItems);
+        return productListItems;
     }
 
     @Nonnull
     @Override
     public List<SearchAggregation> getSearchAggregations() {
-        return Collections.unmodifiableList(new ArrayList<>(searchAggregations));
+        return searchAggregations;
     }
 
     @Nonnull
@@ -106,11 +106,11 @@ public class SearchResultsSetImpl implements SearchResultsSet {
     }
 
     public void setProductListItems(final List<ProductListItem> productListItems) {
-        this.productListItems = new ArrayList<>(productListItems);
+        this.productListItems = productListItems;
     }
 
     public void setSearchAggregations(final List<SearchAggregation> searchAggregations) {
-        this.searchAggregations = new ArrayList<>(searchAggregations);
+        this.searchAggregations = searchAggregations;
     }
 
     @Nonnull
@@ -154,6 +154,6 @@ public class SearchResultsSetImpl implements SearchResultsSet {
     }
 
     public void setErrors(List<Error> errors) {
-        this.errors = new ArrayList<>(errors);
+        this.errors = errors;
     }
 }

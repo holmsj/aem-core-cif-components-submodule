@@ -94,7 +94,7 @@ public class UrlProviderImpl implements UrlProvider {
      * implementation of
      * {@link UrlProvider}.
      */
-    protected static final Map<String, ProductUrlFormat> DEFAULT_PRODUCT_URL_FORMATS = new HashMap<String, ProductUrlFormat>() {
+    public static final Map<String, ProductUrlFormat> DEFAULT_PRODUCT_URL_FORMATS = new HashMap<String, ProductUrlFormat>() {
         {
             put(ProductPageWithSku.PATTERN, ProductPageWithSku.INSTANCE);
             put(ProductPageWithUrlKey.PATTERN, ProductPageWithUrlKey.INSTANCE);
@@ -106,25 +106,17 @@ public class UrlProviderImpl implements UrlProvider {
         }
     };
 
-    public static Map<String, ProductUrlFormat> getDefaultProductUrlFormats() {
-        return new HashMap<>(DEFAULT_PRODUCT_URL_FORMATS);
-    }
-
     /**
      * A {@link Map} of default patterns for category pages supported by the default
      * implementation of
      * {@link UrlProvider}.
      */
-    protected static final Map<String, CategoryUrlFormat> DEFAULT_CATEGORY_URL_FORMATS = new HashMap<String, CategoryUrlFormat>() {
+    public static final Map<String, CategoryUrlFormat> DEFAULT_CATEGORY_URL_FORMATS = new HashMap<String, CategoryUrlFormat>() {
         {
             put(CategoryPageWithUrlPath.PATTERN, CategoryPageWithUrlPath.INSTANCE);
             put(CategoryPageWithUrlKey.PATTERN, CategoryPageWithUrlKey.INSTANCE);
         }
     };
-
-    public static Map<String, CategoryUrlFormat> getDefaultCategoryUrlFormats() {
-        return new HashMap<>(DEFAULT_CATEGORY_URL_FORMATS);
-    }
 
     private static final Logger LOGGER = LoggerFactory.getLogger(UrlProviderImpl.class);
 

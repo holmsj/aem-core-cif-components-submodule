@@ -44,7 +44,7 @@ import com.adobe.granite.ui.components.ds.DataSource;
 public class CategoryPageUrlFormatsServlet extends AbstractPageUrlFormatsServlet {
     static final String RESOURCE_TYPE = "core/cif/components/datasource/categoryurlformats";
     static final String PAGE_URL_FORMAT_KEY = "categoryPageUrlFormat";
-    static final List<String> URL_FORMATS = UrlProviderImpl.getDefaultCategoryUrlFormats().keySet().stream()
+    static final List<String> URL_FORMATS = UrlProviderImpl.DEFAULT_CATEGORY_URL_FORMATS.keySet().stream()
         .map(f -> f.replace("#", "\\#"))
         .collect(Collectors.toList());
 

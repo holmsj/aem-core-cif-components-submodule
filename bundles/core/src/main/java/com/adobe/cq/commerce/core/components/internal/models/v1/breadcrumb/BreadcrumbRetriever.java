@@ -58,7 +58,7 @@ class BreadcrumbRetriever extends AbstractRetriever {
         if (categories == null) {
             populate();
         }
-        return Collections.unmodifiableList(categories);
+        return categories;
     }
 
     /**

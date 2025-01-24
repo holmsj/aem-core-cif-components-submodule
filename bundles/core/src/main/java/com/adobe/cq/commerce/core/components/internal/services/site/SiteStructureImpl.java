@@ -189,7 +189,7 @@ public class SiteStructureImpl implements SiteStructure {
 
     private LinkedList<Entry> getCatalogPages() {
         if (catalogPages != null) {
-            return new LinkedList<>(catalogPages);
+            return catalogPages;
         }
 
         Page productionPage = currentPage;
@@ -247,7 +247,7 @@ public class SiteStructureImpl implements SiteStructure {
             catalogPages = new LinkedList<>();
         }
 
-        return new LinkedList<>(catalogPages);
+        return catalogPages;
     }
 
     /**

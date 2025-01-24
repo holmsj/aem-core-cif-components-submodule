@@ -52,7 +52,7 @@ public class CategoryPageUrlFormatsServletTest {
         datasource = context.registerInjectActivateService(new CategoryPageUrlFormatsServlet());
         List<String> expectedValuesList = new ArrayList<>();
         expectedValuesList.add("");
-        UrlProviderImpl.getDefaultCategoryUrlFormats().keySet().forEach(f -> expectedValuesList.add(f.replace(
+        UrlProviderImpl.DEFAULT_CATEGORY_URL_FORMATS.keySet().forEach(f -> expectedValuesList.add(f.replace(
             "#", "\\#")));
         expectedValuesList.add(
             "com.adobe.cq.commerce.core.components.internal.servlets.CategoryPageUrlFormatsServletTest$CustomUrlFormat");
